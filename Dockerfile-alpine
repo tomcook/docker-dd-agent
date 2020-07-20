@@ -8,6 +8,7 @@ ENV DD_HOME=/opt/datadog-agent \
     # prevent the agent from being started after install
     DD_START_AGENT=0 \
     DOCKER_DD_AGENT=yes \
+    DD_SKIP_INTEGRATIONS=1 \
     PYCURL_SSL_LIBRARY=openssl \
     AGENT_VERSION=$AGENT_VERSION_ARG \
     INTEGRATIONS_VERSION=$AGENT_VERSION_ARG \
